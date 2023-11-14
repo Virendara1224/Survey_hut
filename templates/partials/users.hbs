@@ -1,0 +1,72 @@
+<div class="container1">
+    <h1>Create a Survey</h1>
+    <form id="survey-form">
+        <label for="question">Question:</label>
+        <input type="text" id="question" name="question" required>
+        <label for="question-type">Select Question Type:</label>
+        <select id="question-type" name="questionType">
+            <option value="multiple-choice">Multiple Choice</option>
+            <option value="text">Text</option>
+            <option value="rating">Rating</option>
+        </select>
+        <button type="button" id="add-question">Add Question</button>
+        <div id="questions-container"></div>
+        <button type="submit">Create Survey</button>
+    </form>
+</div>
+<div class="container1">
+    <h1>Customize Your Survey</h1>
+    <form id="customization-form">
+        <label for="survey-color">Choose Survey Color:</label>
+        <input type="color" id="survey-color" name="surveyColor">
+        <button type="submit">Apply Customization</button>
+    </form>
+    <div id="survey-preview" class="survey-preview">
+        <h2>Survey Preview</h2>
+        <p>This is a sample survey question.</p>
+        <h1>Survey Title</h1>
+  <form id="survey-form">
+      <!-- Question 1: Multiple Choice -->
+      <div class="question">
+          <p>What is your favorite color?</p>
+          <label><input type="radio" name="question1" value="red"> Red</label>
+          <label><input type="radio" name="question1" value="blue"> Blue</label>
+          <label><input type="radio" name="question1" value="green"> Green</label>
+      </div>
+
+      <!-- Question 2: Text -->
+      <div class="question">
+          <p>What do you like about this product?</p>
+          <textarea name="question2" rows="3"></textarea>
+      </div>
+      <!-- Question 3: Rating -->
+      <div class="question">
+          <p>Rate your overall experience:</p>
+          <input type="number" name="question3" min="1" max="5">
+      </div>
+      <button type="submit">Submit</button>
+  </form>
+    </div>
+</div>
+<div class="container1">
+  <h1>Distribute Your Survey</h1>
+  <form id="distribution-form">
+      <label for="distribution-method">Select Distribution Method:</label>
+      <select id="distribution-method" name="distributionMethod">
+          <option value="email">Email</option>
+          <option value="link">Link</option>
+          <option value="social-media">Social Media</option>
+      </select>
+      <button type="submit">Generate Distribution</button>
+  </form>
+  <div id="distribution-details" class="distribution-details">
+      <h2>Distribution Details</h2>
+      <p>Here are your distribution details.</p>
+  </div>
+</div>
+<div class="container1">
+  <h1>Survey Results</h1>
+  <div class="chart-container">
+      <canvas id="response-chart"></canvas>
+  </div>
+</div>
